@@ -115,21 +115,23 @@ header ul li {
     height: 100%;
     margin-right: 10px;
 }
+header ul li a { 
+    text-decoration: none;
+}
 
 
-header ul li a img{
+header ul li a svg {
     height: 15px;
     width: 15px;
     margin-top: 20px;
-    transition: opacity .2s ease;
+    transition: opacity .2s ease, fill .2s ease;
     fill: white;
 }
 
-header ul li a img:hover {
-    opacity: 0.7;
+header ul li a:hover svg {
+    /* opacity: 0.7; */
     fill: var(--main-bg-color);
 }
-
 
 hr.accueil-divider{
     border: none;
