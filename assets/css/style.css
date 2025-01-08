@@ -25,7 +25,7 @@
 }
 
 
-main {
+html {
     background: rgba(31, 33, 41, 1);
 }
 
@@ -36,10 +36,9 @@ main {
 section:not(#accueil){
     width: 75vw;
     margin: auto;
+    padding: 7vh 20px 20px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0);
-    padding: 20px;
-    margin-top: 20px;
 }
 
 section h2 {
@@ -48,6 +47,7 @@ section h2 {
     text-transform: uppercase;
     text-align: center;
     color: white;
+    margin-bottom: 3vh;
 }
 
 section h3 {
@@ -74,14 +74,13 @@ hr.section-divider {
 
 
 
-
 /* #region Header*/
 header {
     background: #000;
     position: fixed;
     width: 100%;
     top: 0;
-    height: 50px;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -96,9 +95,9 @@ header * {
 header h1 {
     font-family: font1;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 2vh;
     margin-left: 50px;
-    font-size: 30px;
+    font-size: 3vh;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -121,9 +120,9 @@ header ul li a {
 
 
 header ul li a svg {
-    height: 15px;
-    width: 15px;
-    margin-top: 20px;
+    height: 3vh;
+    width: auto;
+    margin-top: 2vh;
     transition: opacity .2s ease, fill .2s ease;
     fill: white;
 }
@@ -140,7 +139,6 @@ hr.accueil-divider{
 }
 
 /* #endregion */
-
 
 
 
@@ -163,7 +161,7 @@ nav#navbar {
 nav#navbar a {
     color: #fff;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 1.5vw;
     padding: 10px;
     border-radius: 5px;
     height: 100%;
@@ -175,6 +173,26 @@ nav#navbar a:hover {
     border: var(--main-bg-color) 2px solid;
 }
 
+/* Breakpoint pour le responsive de la navbar */
+
+@media (max-width: 1000px) {
+    nav#navbar a {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 580px) {
+    nav#navbar a {
+        font-size: 2vw;
+    }
+}
+@media (max-width: 340px) {
+    nav#navbar a {
+        font-size: 1.2vw;
+    }
+}
+
+
 /* #endregion */
 
 
@@ -184,7 +202,7 @@ nav#navbar a:hover {
 
 section#accueil {
     height: 100vh;
-    background-image: url("../imgs/bg2.png");
+    background-image: url("../imgs/bg.png");
 }
 
 section#accueil div.container {
@@ -225,12 +243,9 @@ section#accueil div.container p {
 /* #region A PROPOS SECTION */
 section#a-propos {
     text-align: center;
-    padding: 40px 20px;
-    /* Fond légèrement transparent */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* Organiser en colonne */
     align-items: center;
     /* Centrer les éléments horizontalement */
     gap: 30px;
@@ -287,7 +302,7 @@ section#a-propos a {
     margin-top: 20px;
     padding: 10px 20px;
     font-family: font1;
-    font-size: 14px;
+    font-size: 24px;
     color: white;
     text-decoration: none;
     border: 2px solid var(--main-bg-color);
@@ -310,6 +325,32 @@ section#a-propos a:hover {
 /* #region PROJECTS SECTION */
 
 
+section#projets nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+section#projets nav button {
+    border-radius: 5px;
+    border: red solid 3px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    font-family: font1;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 15px;
+    transition: .3s;
+}
+
+
+section#projets nav button:hover, section#projets nav button.active {
+    background-color: var(--main-bg-color);
+    color: black;
+}
+
 /* Conteneur pour les articles */
 section#projets .projects-container {
     margin-top: 50px;
@@ -327,13 +368,13 @@ section#projets .projects-container article {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     /* Ombre subtile */
     overflow: hidden;
-    /* width: calc(33.33% - 20px); */
-    /* Trois colonnes */
-    max-width: 450px;
+    width: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    /* Permet que l'image ne sorte pas du cadre*/
+    transform: translateY(-0px);
 }
 
 section#projets .projects-container article:hover {
@@ -344,7 +385,7 @@ section#projets .projects-container article:hover {
 
 section#projets .projects-container article h3 {
     font-family: font1;
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
     color: white;
     margin: 15px 0;
@@ -360,18 +401,49 @@ section#projets .projects-container article p {
     margin-bottom: 15px;
 }
 
+
+
 /* Intégration de Sketchfab */
-section#projets .projects-container article .sketchfab-embed-wrapper {
+section#projets .projects-container article .sketchfab-embed-wrapper, section#projets .projects-container article .project_visual {
     width: 100%;
+    height: 100%;
     aspect-ratio: 16 / 9;
     background-color: #000;
+    overflow: hidden;
     /* Fond noir pour les vidéos */
 }
+
+section#projets .projects-container article .sketchfab-embed-wrapper, section#projets .projects-container article .project_visual img {
+    /*position: absolute;*/
+
+    width: 100%;
+    /*height: 100%;*/
+
+    aspect-ratio: 16 / 9;
+}
+
 
 section#projets .projects-container article .sketchfab-embed-wrapper iframe {
     width: 100%;
     height: 100%;
 }
+
+
+
+/* Cache toutes les sections de projets par défaut */
+section#projets div.projects-container {
+    display: none;
+    /* d’autres styles possibles… */
+}
+
+/* Affiche les sections actives en flex */
+section#projets div.projects-container.active {
+    display: flex;
+    /* ajustez selon vos besoins: flex, grid, block, etc. */
+}
+
+
+
 
 /* #endregion */
 
@@ -405,12 +477,14 @@ section#contact a:hover {
 
 
 
-/* FOOTER SECTION */
+/* #region FOOTER SECTION */
 footer {
+    margin-top: 25px;
     text-align: center;
     bottom: 0;
     width: 100%;
-    margin: 10px 0;
+    padding: 10px 0;
+    background-color: rgb(22, 23, 30);
 }
 
 /* Texte du footer */
@@ -418,4 +492,6 @@ footer p {
     font-size: 14px;
     line-height: 1.6;
     margin: 0;
+    color: white;
 }
+/* #endregion */
