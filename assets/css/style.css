@@ -333,7 +333,7 @@ section#projets nav {
 
 section#projets nav button {
     border-radius: 5px;
-    border: red solid 3px;
+    border: var(--main-bg-color) solid 3px;
     background-color: rgba(0, 0, 0, 0);
     color: white;
     width: 150px;
