@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="assets/js/project-section.js" defer></script>
+    <script src="assets/js/color_changer.js" defer></script>
 </head>
 
 <body>
@@ -48,8 +49,41 @@
             univers uniques.</p>
     </div>
 
-
 </section>
+
+<aside id="color-selector" class="closed">
+        <button class="color-toggle"><</button>
+    <div>
+        <p>Selectionnez votre couleur !</p>
+        <input type="color" id="color-picker" name="color-picker" value="#ff0000">
+    </div>
+</aside>
+
+
+<!-- Gestion du toggle pour le panneau de changement de couleur -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const aside = document.getElementById('color-selector');
+        const toggleBtn = aside.querySelector('.color-toggle');
+
+        // État initial : l'aside est ouvert
+        let isOpen = !aside.classList.contains('closed');
+
+        toggleBtn.addEventListener('click', function() {
+            if (isOpen) {
+                // On ajoute la classe "closed" pour déclencher la transition
+                aside.classList.add('closed');
+                // Change le texte du bouton ou sa flèche pour refléter l'état
+                toggleBtn.textContent = '<';
+            } else {
+                // On retire la classe "closed"
+                aside.classList.remove('closed');
+                toggleBtn.textContent = '>';
+            }
+            isOpen = !isOpen; // on inverse l'état
+        });
+    });
+</script>
 <main>
 
     <hr class="accueil-divider"/>
@@ -96,10 +130,14 @@
             <article>
                 <h3>Abandon de structures</h3>
                 <div class="project_visual">
-                    <img class="multiple_imgs" src="assets/imgs/projects/environnement/placeholder1.jpg" alt="placeholder">
-                    <img class="multiple_imgs" src="assets/imgs/projects/environnement/placeholder4.jpg" alt="placeholder">
-                    <img class="multiple_imgs" src="assets/imgs/projects/character/placeholder2.jpg" alt="placeholder">
-                    <img class="multiple_imgs" src="assets/imgs/projects/character/placeholder3.jpg" alt="placeholder">
+                    <img class="multiple_imgs" src="assets/imgs/projects/environnement/placeholder1.jpg"
+                         alt="placeholder">
+                    <img class="multiple_imgs" src="assets/imgs/projects/environnement/placeholder4.jpg"
+                         alt="placeholder">
+                    <img class="multiple_imgs" src="assets/imgs/projects/environnement/placeholder5.jpg"
+                         alt="placeholder">
+                    <img class="multiple_imgs" src="assets/imgs/projects/environnement/placeholder6.jpg"
+                         alt="placeholder">
                 </div>
             </article>
 
@@ -109,7 +147,7 @@
         <div class="projects-container" id="projets-character">
 
             <article>
-                <h3>Robot à l'ère d'ultron</h3>
+                <h3>Boss Athena Reborn</h3>
                 <div class="project_visual">
                     <img src="assets/imgs/projects/character/placeholder2.jpg" alt="placeholder">
                 </div>
@@ -128,7 +166,7 @@
 
 
             <article>
-                <h3>NewWorld personnage principal</h3>
+                <h3>NeoWar personnage principal</h3>
                 <div class="project_visual">
                     <img src="assets/imgs/projects/character/placeholder3.jpg" alt="placeholder">
                 </div>

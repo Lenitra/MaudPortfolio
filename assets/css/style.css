@@ -197,12 +197,52 @@ nav#navbar a:hover {
 
 
 
+/* Color selector */
+#color-selector div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    wrap-option: wrap;
+}
+
+.color-toggle{
+    /*border: 2px solid black;*/
+    margin-right: 10px;
+    font-family: "Verdana", sans-serif;
+    width: 25px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+#color-selector {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    padding:0;
+    top: 50vh;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.81);
+    border: 2px solid black;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .8);
+    z-index: 100;
+    transition: transform 0.3s ease;
+    transform: translateX(0); /* Position de base : visible */
+}
+
+#color-selector.closed {
+    transform: translateX(90%);
+}
 
 /* #region Accueil section */
 
 section#accueil {
     height: 100vh;
-    background-image: url("../imgs/bg.png");
+    background-image: url("../imgs/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section#accueil div.container {
