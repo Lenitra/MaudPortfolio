@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maud Mellinger — Artiste 3D | Personnages, créatures & environnements</title>
+<meta name="description" content="Portfolio de Maud Mellinger, artiste 3D : sculpture de personnages et de créatures sous ZBrush, modélisation Maya, texturing Substance Painter et rendu Unreal Engine.">
+<meta name="author" content="Maud Mellinger">
+<meta name="theme-color" content="#0b0b0c">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maud Mellinger — Artiste 3D">
+<meta property="og:description" content="Personnages, créatures et environnements. Sculpture ZBrush, modélisation Maya, texturing Substance Painter, rendu Unreal Engine.">
+<meta property="og:image" content="https://lenitra.github.io/MaudPortfolio/assets/img/hero.webp">
+<meta property="og:url" content="https://lenitra.github.io/MaudPortfolio/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0b0c'/%3E%3Ctext x='16' y='23.5' font-family='Georgia,serif' font-size='21' fill='%23f2efe9' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="preload" as="image" href="assets/img/hero.webp">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<a class="skip-link" href="#projets">Aller aux projets</a>
+
+<!-- ══ En-tête ══ -->
+<header class="site-header" id="header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#accueil">
+      <span class="brand__name">Maud Mellinger</span>
+      <span class="brand__role">Artiste 3D</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <ul class="nav__list">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#reel">Démo reel</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══ Accueil ══ -->
+<section class="hero" id="accueil">
+  <div class="hero__bg" role="presentation">
+    <img src="assets/img/hero.webp" alt="" width="1536" height="864" fetchpriority="high">
+  </div>
+
+  <div class="wrap hero__inner">
+    <p class="eyebrow hero__eyebrow"><span class="eyebrow__mark">Portfolio</span> — Artiste 3D</p>
+    <h1 class="hero__title">Maud<br>Mellinger</h1>
+    <p class="hero__lead">
+      Personnages, créatures et environnements pour le jeu vidéo et l'image.
+      De la sculpture à l'éclairage final&nbsp;: <em>ZBrush</em>, <em>Maya</em>,
+      <em>Substance&nbsp;Painter</em>, <em>Unreal&nbsp;Engine</em>.
+    </p>
+    <p class="hero__actions">
+      <a class="btn btn--solid" href="#projets">Voir les projets</a>
+      <a class="btn" href="#reel">Démo reel</a>
+    </p>
+  </div>
+
+  <a class="hero__scroll" href="#reel" aria-label="Faire défiler vers la démo reel"><span></span></a>
+</section>
+
+<!-- ══ Démo reel ══ -->
+<section class="section section--reel" id="reel">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow"><span class="eyebrow__mark">01</span> — En mouvement</p>
+      <h2 class="section__title">Démo reel</h2>
+      <p class="section__intro">
+        Un aperçu animé des projets&nbsp;: sculptures, environnements et rendus moteur.
+      </p>
+    </header>
+
+    <figure class="reel">
+      <video class="reel__video" id="reel-video"
+             controls preload="none" playsinline
+             poster="assets/img/poster-demoreel.webp">
+        <source src="assets_visuels/demoreel-web.mp4" type="video/mp4">
+        <p>Votre navigateur ne peut pas lire cette vidéo.
+           <a href="assets_visuels/demoreel-web.mp4">Télécharger la démo reel</a>.</p>
+      </video>
+      <button class="reel__play" id="reel-play" type="button" aria-label="Lire la démo reel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+        <span>Lire la démo reel</span>
+      </button>
+    </figure>
+  </div>
+</section>
+
+<!-- ══ Projets ══ -->
+<section class="section section--works" id="projets">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow"><span class="eyebrow__mark">02</span> — Sélection</p>
+      <h2 class="section__title">Projets</h2>
+      <p class="section__intro">
+        Douze projets, de l'exercice de sculpture à l'environnement complet monté sous moteur.
+        Cliquez sur une image pour ouvrir la galerie.
+      </p>
+    </header>
+
+    <div class="filters" id="filters" role="group" aria-label="Filtrer les projets par discipline"></div>
+
+    <div class="works" id="works">
+
+      <article class="card" data-slug="flasgar" data-tags="personnages">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/flasgar-1-t.webp" alt="Flasgar de face, corps émacié, bras démesurés"
+                 width="580" height="738" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 4 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Projet Red Wall</p>
+            <h3 class="card__title">Flasgar</h3>
+            <p class="card__tools">ZBrush</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Flasgar</button>
+      </article>
+
+      <article class="card" data-slug="chapelle" data-tags="environnements texturing">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/chapelle-1-t.webp" alt="Chapelle médiévale de nuit dans un cimetière brumeux, rendu Unreal Engine"
+                 width="800" height="450" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 4 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Environnement complet</p>
+            <h3 class="card__title">Chapelle médiévale</h3>
+            <p class="card__tools">Maya · Substance Painter · Unreal Engine</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Chapelle médiévale</button>
+      </article>
+
+      <article class="card" data-slug="buste-demon" data-tags="personnages">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/buste-demon-1-t.webp" alt="Buste de démon cornu vu de face, sculpture ZBrush"
+                 width="800" height="469" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 4 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Sculpture</p>
+            <h3 class="card__title">Buste démoniaque</h3>
+            <p class="card__tools">ZBrush</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Buste démoniaque</button>
+      </article>
+
+      <article class="card" data-slug="dragon" data-tags="texturing">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/dragon-1-t.webp" alt="Dragon texturé, gros plan sur la tête et le corps violacé"
+                 width="800" height="450" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 3 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Texturing</p>
+            <h3 class="card__title">Dragon</h3>
+            <p class="card__tools">Substance Painter</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Dragon</button>
+      </article>
+
+      <article class="card" data-slug="pilote-ciel-maudit" data-tags="props texturing">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/pilote-ciel-maudit-1-t.webp" alt="Avion vert de profil, quatre hélices"
+                 width="767" height="304" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 5 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Game jam — octobre 2025</p>
+            <h3 class="card__title">Pilote du ciel maudit</h3>
+            <p class="card__tools">Maya · Substance Painter</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Pilote du ciel maudit</button>
+      </article>
+
+      <article class="card" data-slug="personnage-sf" data-tags="personnages">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/personnage-sf-1-t.webp" alt="Personnage science-fiction élancé, silhouette noire et rouge, tenant une lanterne"
+                 width="800" height="450" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 2 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Character design</p>
+            <h3 class="card__title">Personnage science-fiction</h3>
+            <p class="card__tools">Modélisation 3D</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Personnage science-fiction</button>
+      </article>
+
+      <article class="card" data-slug="archives" data-tags="environnements">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/archives-1-t.webp" alt="Salle d'archives sombre, rayonnages de boîtes et lampe suspendue"
+                 width="800" height="450" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir l'image</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Environnement d'intérieur</p>
+            <h3 class="card__title">Salle d'archives</h3>
+            <p class="card__tools">Unreal Engine</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Salle d'archives</button>
+      </article>
+
+      <article class="card" data-slug="character-art" data-tags="personnages">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/character-art-1-t.webp" alt="Médecin de la peste, masque à bec et cape, sculpture ZBrush"
+                 width="800" height="594" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 3 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Exercices de character art</p>
+            <h3 class="card__title">Médecin de la peste &amp; Maléfique</h3>
+            <p class="card__tools">ZBrush</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Médecin de la peste et Maléfique</button>
+      </article>
+
+      <article class="card" data-slug="batiments" data-tags="environnements texturing">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/batiments-1-t.webp" alt="Saloon western texturé dans un décor désertique avec cactus"
+                 width="800" height="397" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 4 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Exercices d'environnement</p>
+            <h3 class="card__title">Western &amp; futuriste</h3>
+            <p class="card__tools">Maya · Substance Painter</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Western et futuriste</button>
+      </article>
+
+      <article class="card" data-slug="speed-sculpts" data-tags="personnages props">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/speed-sculpts-1-t.webp" alt="Speed sculpt : créature-pipe à la gueule dentée"
+                 width="800" height="573" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 3 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">1 h 30 – 2 h par pièce</p>
+            <h3 class="card__title">Speed sculpts</h3>
+            <p class="card__tools">ZBrush</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Speed sculpts</button>
+      </article>
+
+      <article class="card" data-slug="tete-gore" data-tags="personnages">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/tete-gore-1-t.webp" alt="Tête gore : visage à la mâchoire fondue et dents pointues"
+                 width="571" height="782" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir&nbsp;— 3 images</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Exercices de sculpture</p>
+            <h3 class="card__title">Têtes horreur / gore</h3>
+            <p class="card__tools">ZBrush</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Têtes horreur et gore</button>
+      </article>
+
+      <article class="card" data-slug="illustration" data-tags="2d">
+        <div class="card__inner">
+          <div class="card__media">
+            <img src="assets/img/illustration-1-t.webp" alt="Illustration 2D : savane en niveaux de gris, acacias et volcan"
+                 width="800" height="566" loading="lazy" decoding="async">
+            <span class="card__zoom" aria-hidden="true">Voir l'image</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Illustration 2D</p>
+            <h3 class="card__title">Étude de valeurs</h3>
+            <p class="card__tools">Dessin numérique</p>
+          </div>
+        </div>
+        <button class="card__link" type="button">Ouvrir le projet Étude de valeurs</button>
+      </article>
+
+    </div>
+
+    <p class="works__empty" id="works-empty" hidden>Aucun projet dans cette catégorie.</p>
+  </div>
+</section>
+
+<!-- ══ À propos ══ -->
+<section class="section section--about" id="apropos">
+  <div class="wrap about">
+    <div class="about__text">
+      <p class="eyebrow"><span class="eyebrow__mark">03</span> — Profil</p>
+      <h2 class="section__title">À propos</h2>
+      <p class="about__lead">
+        Je sculpte des créatures et je construis des lieux qui mettent mal à l'aise.
+      </p>
+      <p>
+        Mon travail tourne autour du personnage et de l'environnement, avec une nette
+        préférence pour l'horreur et le fantastique sombre&nbsp;: silhouettes lisibles,
+        anatomies détournées et éclairages qui laissent le reste à l'imagination.
+      </p>
+      <p>
+        Je prends les projets du début à la fin — recherche de forme sous ZBrush,
+        modélisation propre sous Maya, texturing dans Substance Painter, puis assemblage
+        et éclairage sous Unreal Engine. J'interviens aussi en renfort sur le seul
+        texturing, comme sur le dragon modélisé par Clément Mona.
+      </p>
+      <p>
+        Récemment&nbsp;: le monstre <em>Flasgar</em> pour la série d'horreur Red Wall,
+        et l'avion du jeu <em>Pilote du ciel maudit</em>, réalisé pendant la game jam
+        d'octobre 2025 sur le thème CURSED.
+      </p>
+
+      <p class="about__cta">
+        <a class="btn btn--solid" href="#contact">Me contacter</a>
+        <a class="btn" href="assets_visuels/MELLINGER_Maud_Portfolio.pdf" download>Portfolio PDF</a>
+      </p>
+    </div>
+
+    <aside class="about__skills" aria-label="Compétences et logiciels">
+      <h3 class="skills__title">Logiciels</h3>
+      <dl class="skills">
+        <div class="skills__row">
+          <dt>Sculpture</dt>
+          <dd>ZBrush</dd>
+        </div>
+        <div class="skills__row">
+          <dt>Modélisation</dt>
+          <dd>Maya</dd>
+        </div>
+        <div class="skills__row">
+          <dt>Texturing</dt>
+          <dd>Substance Painter</dd>
+        </div>
+        <div class="skills__row">
+          <dt>Moteur &amp; rendu</dt>
+          <dd>Unreal Engine</dd>
+        </div>
+      </dl>
+
+      <h3 class="skills__title">Domaines</h3>
+      <ul class="tags">
+        <li>Character art</li>
+        <li>Creature design</li>
+        <li>Environment art</li>
+        <li>Props &amp; véhicules</li>
+        <li>Texturing PBR</li>
+        <li>Éclairage</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ══ Contact ══ -->
+<section class="section section--contact" id="contact">
+  <div class="wrap contact">
+    <p class="eyebrow"><span class="eyebrow__mark">04</span> — Disponibilité</p>
+    <h2 class="contact__title">Un projet&nbsp;?<br>Parlons-en.</h2>
+    <p class="contact__lead">
+      Ouverte aux collaborations, aux missions freelance et aux opportunités en studio.
+    </p>
+
+    <ul class="contact__links">
+      <li>
+        <a href="mailto:mellingermaud@gmail.com">
+          <span class="contact__label">E-mail</span>
+          <span class="contact__value">mellingermaud@gmail.com</span>
+        </a>
+      </li>
+      <li>
+        <a href="assets_visuels/MELLINGER_Maud_Portfolio.pdf" download>
+          <span class="contact__label">Dossier</span>
+          <span class="contact__value">Portfolio PDF</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p>© <span id="year">2026</span> Maud Mellinger — Tous droits réservés.</p>
+    <p><a href="#accueil">Haut de page ↑</a></p>
+  </div>
+</footer>
+
+<!-- ══ Galerie plein écran ══ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+  <div class="lightbox__backdrop" data-close></div>
+
+  <div class="lightbox__panel">
+    <header class="lightbox__head">
+      <div>
+        <p class="lightbox__kicker" id="lb-kicker"></p>
+        <h2 class="lightbox__title" id="lb-title"></h2>
+      </div>
+      <button class="lightbox__close" id="lb-close" type="button" aria-label="Fermer la galerie">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </header>
+
+    <div class="lightbox__stage">
+      <button class="lightbox__nav lightbox__nav--prev" id="lb-prev" type="button" aria-label="Image précédente">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4L7 12l8 8"/></svg>
+      </button>
+
+      <figure class="lightbox__figure">
+        <img id="lb-img" alt="">
+      </figure>
+
+      <button class="lightbox__nav lightbox__nav--next" id="lb-next" type="button" aria-label="Image suivante">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
+      </button>
+    </div>
+
+    <footer class="lightbox__foot">
+      <p class="lightbox__caption" id="lb-caption"></p>
+      <p class="lightbox__meta">
+        <span id="lb-tools"></span>
+        <span class="lightbox__count" id="lb-count"></span>
+      </p>
+    </footer>
+  </div>
+
+  <p class="lightbox__live visually-hidden" aria-live="polite" id="lb-live"></p>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

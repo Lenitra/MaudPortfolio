@@ -1,0 +1,11 @@
+# Master de la démo reel — 230 Mo, au-dessus de la limite de 100 Mo de GitHub.
+# La version servie par le site est assets_visuels/demoreel-web.mp4 (15 Mo).
+assets_visuels/Demoreel_MaudMELLINGER.mp4
+
+# Outillage local
+.claude/
+
+# Système
+Thumbs.db
+desktop.ini
+.DS_Store
